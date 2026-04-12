@@ -1,0 +1,21 @@
+numero = 0
+nmr_ingressos = 100
+contador = 0
+
+while contador != 4:
+    print("escolha alguma opcao abaixo:")
+    print("1 - comprar ingresso")
+    print("2 - adicionar ingresso extra")
+    print("3 - ingressos disponiveis")
+    print("4 - encerrar")
+    contador = int(input("solecione uma opcao acima:"))
+    if contador == 1:
+        print("voce comprou um ingresso")
+    elif contador == 2:
+        print("voce adicionou um ingreso extra")
+    elif contador == 3:
+        numero = int(input("digite o numero de ingressos que voce comprou:"))
+        nmr_ingressos = nmr_ingressos - numero
+        print("disponiveis:", nmr_ingressos)
+    else:
+        print("ate mais")
