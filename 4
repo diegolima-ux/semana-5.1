@@ -1,0 +1,21 @@
+
+soma = 0
+
+
+for i in range(15):
+    idade = int(input(f"Digite a idade do aluno {i+1}: "))
+    soma += idade
+
+
+media = soma / 15
+
+if media <= 25:
+    classificacao = "Turma jovem"
+elif media <= 60:
+    classificacao = "Turma adulta"
+else:
+    classificacao = "Turma idosa"
+
+
+print("Média da turma:", media)
+print("Classificação:", classificacao)
